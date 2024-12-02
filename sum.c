@@ -1,12 +1,15 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-    int a,b;
-    printf("Enter The value of a =");
-    scanf("%d",&a);
+    int n,sum=0;
+    printf("Enter the number:");
+    scanf("%d",&n);
+  
+    for(int i=1,j=n; i<=n && j>=1; i++,j--){
+        sum=sum+i;
+        printf("%d\n",j);
+        
+    }
+    printf("%d\n",sum);
 
-    printf("Enter The value of b =");
-    scanf("%d",&b);
-
-    printf("The sum of a and b is %d",a+b);
 }
